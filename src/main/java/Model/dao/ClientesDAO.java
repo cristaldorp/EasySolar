@@ -12,7 +12,7 @@ import model.entidades.Clientes;
  *
  * @author Usuario
  */
-public interface ClientesDAO {
+public interface ClientesDao {
     void insert(Clientes obj);
     void update(Clientes obj);
     void deleteByid(Clientes obj);

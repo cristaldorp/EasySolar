@@ -5,10 +5,17 @@
  */
 package Model.dao;
 
+import java.util.List;
+import model.entidades.Funcionarios;
+
 /**
  *
  * @author Usuario
  */
-public interface FuncionarioDAO {
-    
+public interface FuncionarioDao {
+    void insert(Funcionarios obj);
+    void update(Funcionarios obj);
+    void deleteByid(Funcionarios obj);
+    Funcionarios findByid(Integer id);
+    List<Funcionarios> findAll();
 }
