@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: conexão.ConexaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec <<< FAILURE!
+conexão.ConexaoTest.testConexao()  Time elapsed: 0.44 sec  <<< FAILURE!
+conexão.DbException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at conexão.DB.getConection(DB.java:30)
+	at conexão.ConexaoTest.testConexao(ConexaoTest.java:28)
+

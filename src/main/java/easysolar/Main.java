@@ -5,7 +5,6 @@
  */
 package easysolar;
 
-import Control.InsertDAO;
 import model.entidades.Funcionarios;
 import conexão.DB;
 import java.sql.SQLException;

@@ -1,7 +1,6 @@
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\Dados.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\dao\ClientesDao.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\conexão\DbException.java
-C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Control\UpdateDAO.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\dao\impl\FuncionarioDaoJDBC.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\dao\DaoFactory.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\Fornecedores.java
@@ -13,7 +12,6 @@ C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\conexão\DB.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\easysolar\Main.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\Orçamento.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\Administrador.java
-C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Control\InsertDAO.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\dao\FuncionarioDao.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\itensOrçamento.java
 C:\Users\Usuario\Desktop\TCC_Solar\src\main\java\Model\entidades\Funcionarios.java

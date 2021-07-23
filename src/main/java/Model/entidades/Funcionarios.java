@@ -5,17 +5,32 @@
  */
 package model.entidades;
 
+import java.io.Serializable;
 import java.sql.Date;
+import java.util.Objects;
+
 
 /**
  *
  * @author rafae
  */
-public class Funcionarios extends Dados{
+public class Funcionarios extends Dados implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private Integer IdFuncionario;
     private String CPF;
     private Clientes clientes;
     private Fornecedores fornecedores;
+
+    public Funcionarios() {
+    }
+
+    public Funcionarios(Integer IdFuncionario, String CPF, Clientes clientes, Fornecedores fornecedores) {
+        this.IdFuncionario = IdFuncionario;
+        this.CPF = CPF;
+        this.clientes = clientes;
+        this.fornecedores = fornecedores;
+    }
 
     public Integer getIdFuncionario() {
         return IdFuncionario;
@@ -65,8 +80,6 @@ public class Funcionarios extends Dados{
         this.telefone = telefone;
     }
 
-   
-
     public String getEndereco() {
         return endereco;
     }
@@ -83,8 +96,34 @@ public class Funcionarios extends Dados{
         this.dataCadastro = dataCadastro;
     }
 
-    public void setDataCadastro(String string) {
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 37 * hash + Objects.hashCode(this.IdFuncionario);
+        return hash;
     }
-    
-    
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Funcionarios other = (Funcionarios) obj;
+        if (!Objects.equals(this.IdFuncionario, other.IdFuncionario)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionarios{" + "IdFuncionario=" + IdFuncionario + ", CPF=" + CPF + ", clientes=" + clientes + ", fornecedores=" + fornecedores + '}';
+    }
+
 }

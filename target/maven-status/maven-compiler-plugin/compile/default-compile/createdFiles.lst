@@ -1,7 +1,5 @@
 model\entidades\Funcionarios.class
 model\dao\ClientesDao.class
-Control\InsertDAO.class
-Control\UpdateDAO.class
 model\entidades\itensOS.class
 model\entidades\Orçamento.class
 model\entidades\Fornecedores.class
