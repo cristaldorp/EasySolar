@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package model.entidades;
 
 import java.sql.Date;
 
@@ -11,42 +11,33 @@ import java.sql.Date;
  *
  * @author rafae
  */
-public class Funcionarios extends Dados{
-    private Integer IdFuncionario;
-    private String CPF;
-    private Clientes clientes;
-    private Fornecedores fornecedores;
+public class Fornecedores extends Dados{
+    private Integer idForn;
+    private String CNPJ;
+    private String NomeFantasia;
 
-    public Integer getIdFuncionario() {
-        return IdFuncionario;
+    public Integer getIdForn() {
+        return idForn;
     }
 
-    public void setIdFuncionario(Integer IdFuncionario) {
-        this.IdFuncionario = IdFuncionario;
+    public void setIdForn(Integer idForn) {
+        this.idForn = idForn;
     }
 
-    public String getCPF() {
-        return CPF;
+    public String getCNPJ() {
+        return CNPJ;
     }
 
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
     }
 
-    public Clientes getClientes() {
-        return clientes;
+    public String getNomeFantasia() {
+        return NomeFantasia;
     }
 
-    public void setClientes(Clientes clientes) {
-        this.clientes = clientes;
-    }
-
-    public Fornecedores getFornecedores() {
-        return fornecedores;
-    }
-
-    public void setFornecedores(Fornecedores fornecedores) {
-        this.fornecedores = fornecedores;
+    public void setNomeFantasia(String NomeFantasia) {
+        this.NomeFantasia = NomeFantasia;
     }
 
     public String getNome() {
@@ -65,8 +56,6 @@ public class Funcionarios extends Dados{
         this.telefone = telefone;
     }
 
-   
-
     public String getEndereco() {
         return endereco;
     }
@@ -81,9 +70,6 @@ public class Funcionarios extends Dados{
 
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
-    }
-
-    public void setDataCadastro(String string) {
     }
     
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package model.entidades;
 
 import java.sql.Date;
 
@@ -11,24 +11,42 @@ import java.sql.Date;
  *
  * @author rafae
  */
-public class Clientes extends Dados{
-    private Integer idClientes;
-    private String CNPJ;
+public class Funcionarios extends Dados{
+    private Integer IdFuncionario;
+    private String CPF;
+    private Clientes clientes;
+    private Fornecedores fornecedores;
 
-    public Integer getIdClientes() {
-        return idClientes;
+    public Integer getIdFuncionario() {
+        return IdFuncionario;
     }
 
-    public void setIdClientes(Integer idClientes) {
-        this.idClientes = idClientes;
+    public void setIdFuncionario(Integer IdFuncionario) {
+        this.IdFuncionario = IdFuncionario;
     }
 
-    public String getCNPJ() {
-        return CNPJ;
+    public String getCPF() {
+        return CPF;
     }
 
-    public void setCNPJ(String CNPJ) {
-        this.CNPJ = CNPJ;
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public Clientes getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(Clientes clientes) {
+        this.clientes = clientes;
+    }
+
+    public Fornecedores getFornecedores() {
+        return fornecedores;
+    }
+
+    public void setFornecedores(Fornecedores fornecedores) {
+        this.fornecedores = fornecedores;
     }
 
     public String getNome() {
@@ -47,7 +65,8 @@ public class Clientes extends Dados{
         this.telefone = telefone;
     }
 
-    
+   
+
     public String getEndereco() {
         return endereco;
     }
@@ -63,7 +82,9 @@ public class Clientes extends Dados{
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-    
+
+    public void setDataCadastro(String string) {
+    }
     
     
 }

@@ -18,24 +18,24 @@ import javax.swing.JOptionPane;
  *
  * @author rafae
  */
-public class Conexao {
-    public static Connection conexao = null;
+public class DB {
+    public static Connection conn = null;
     
     public static Connection getConection() {
         try {
-            conexao = DriverManager.getConnection
+            conn = DriverManager.getConnection
                         ("jdbc:postgresql://localhost:5432/EasySolar","postgres", "rc12345");
             System.out.println("Conectado com Sucesso");
         } catch (SQLException ex) {
             throw new DbException(ex.getMessage());
         }
-        return conexao;
+        return conn;
     }
     
     public static void closeConexao(){
-        if(conexao != null){
+        if(conn != null){
             try {
-                conexao.close();
+                conn.close();
             } catch (SQLException ex) {
                 throw new DbException(ex.getMessage());
             }

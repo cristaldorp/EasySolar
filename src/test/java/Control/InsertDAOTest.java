@@ -5,8 +5,8 @@
  */
 package Control;
 
-import Model.Funcionarios;
-import conexão.Conexao;
+import model.entidades.Funcionarios;
+import conexão.DB;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

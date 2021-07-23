@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package model.entidades;
 
 import java.sql.Date;
 
@@ -11,17 +11,16 @@ import java.sql.Date;
  *
  * @author rafae
  */
-public class Fornecedores extends Dados{
-    private Integer idForn;
+public class Clientes extends Dados{
+    private Integer idClientes;
     private String CNPJ;
-    private String NomeFantasia;
 
-    public Integer getIdForn() {
-        return idForn;
+    public Integer getIdClientes() {
+        return idClientes;
     }
 
-    public void setIdForn(Integer idForn) {
-        this.idForn = idForn;
+    public void setIdClientes(Integer idClientes) {
+        this.idClientes = idClientes;
     }
 
     public String getCNPJ() {
@@ -30,14 +29,6 @@ public class Fornecedores extends Dados{
 
     public void setCNPJ(String CNPJ) {
         this.CNPJ = CNPJ;
-    }
-
-    public String getNomeFantasia() {
-        return NomeFantasia;
-    }
-
-    public void setNomeFantasia(String NomeFantasia) {
-        this.NomeFantasia = NomeFantasia;
     }
 
     public String getNome() {
@@ -56,6 +47,7 @@ public class Fornecedores extends Dados{
         this.telefone = telefone;
     }
 
+    
     public String getEndereco() {
         return endereco;
     }
@@ -71,6 +63,7 @@ public class Fornecedores extends Dados{
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
+    
     
     
 }

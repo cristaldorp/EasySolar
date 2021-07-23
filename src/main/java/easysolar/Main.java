@@ -6,8 +6,8 @@
 package easysolar;
 
 import Control.InsertDAO;
-import Model.Funcionarios;
-import conexão.Conexao;
+import model.entidades.Funcionarios;
+import conexão.DB;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -22,7 +22,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SQLException {
-        Conexao c = new Conexao();
+        DB c = new DB();
         
         c.getConection();
         

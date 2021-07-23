@@ -24,7 +24,7 @@ public class ConexaoTest {
     
     @Test
     public void testConexao(){
-        Conexao c = new Conexao();
+        DB c = new DB();
         assertNotEquals(c.getConection(), new RuntimeException());
     }
     
