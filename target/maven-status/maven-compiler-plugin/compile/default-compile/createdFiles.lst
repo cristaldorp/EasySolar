@@ -1,0 +1,16 @@
+Model\Clientes.class
+conexão\Conexao.class
+Model\Administrador.class
+Model\Materiais.class
+Model\Funcionarios.class
+Model\itensOS.class
+Model\Orçamento.class
+Model\Dados.class
+View\telaLogin.class
+Control\InsertDAO.class
+Control\UpdateDAO.class
+easysolar\Main.class
+Model\Fornecedores.class
+View\telaLogin$1.class
+Model\itensOrçamento.class
+Model\OrdemDeServiço.class
